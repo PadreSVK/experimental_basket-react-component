@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: basket-react-component
+  namespace: experiments
+  title: Basket React Component
+  description: React component library for basket functionality
+spec:
+  type: nodejs-package
+  lifecycle: production
+  owner: group:experiments/team-bravo
+  system: system:experiments/basket
+  consumesApis:
+    - api:experiments/basket-v3-api
